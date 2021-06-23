@@ -19,4 +19,4 @@ FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 #ENTRYPOINT ["dotnet", "VideoRental.API.dll"]
-CMD ASPNETCORE_URLS=http://*:$PORT VideoRental.API.dll
+CMD ASPNETCORE_URLS=http://*:$PORT dotnet VideoRental.API.dll
