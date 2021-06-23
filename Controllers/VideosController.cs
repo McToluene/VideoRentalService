@@ -2,7 +2,7 @@
 using Swashbuckle.AspNetCore.Annotations;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using VideoRental.Helper;
+using VideoRental.API.Helper;
 using VideoRental.Interfaces;
 using VideoRental.API.ViewModels.Response;
 using VideoRental.API.ViewModels.Video;

@@ -4,7 +4,7 @@ using VideoRental.Interfaces;
 using VideoRental.API.ViewModels;
 using VideoRental.API.ViewModels.Response;
 
-namespace VideoRental.Helper
+namespace VideoRental.API.Helper
 {
   public class PaginationHelper
   {
