@@ -24,6 +24,7 @@ namespace VideoRental
         }
 
         public IConfiguration Configuration { get; }
+
         private string DatabaseConnectionString =>
           _webHostEnvironment.IsDevelopment()
               ? Configuration.GetConnectionString("DefaultConnection")
