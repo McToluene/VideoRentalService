@@ -12,3 +12,4 @@ namespace VideoRental.Interfaces
         Task<VideoPrice> GetPrice(Detail price);
     }
 }
+

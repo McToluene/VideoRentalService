@@ -1,7 +1,7 @@
 ﻿namespace VideoRental.API.ViewModels.Video
 {
-  public class VideoPrice : Detail
-  {
-    public decimal Price { get; set; }
-  }
+    public class VideoPrice : Detail
+    {
+        public decimal Price { get; set; }
+    }
 }

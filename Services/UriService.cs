@@ -5,21 +5,21 @@ using VideoRental.API.ViewModels;
 
 namespace VideoRental.Services
 {
-  public class UriService : IUriService
-  {
-    private readonly string _baseUri;
-
-    public UriService(string baseUri)
+    public class UriService : IUriService
     {
-      _baseUri = baseUri;
-    }
+        private readonly string _baseUri;
 
-    public Uri GetPageUri(PaginationFilter filter, string route)
-    {
-      var _enpointUri = new Uri(string.Concat(_baseUri, route));
-      var modifiedUri = QueryHelpers.AddQueryString(_enpointUri.ToString(), "pageNumber", filter.PageNumber.ToString());
-      modifiedUri = QueryHelpers.AddQueryString(modifiedUri, "pageSize", filter.PageSize.ToString());
-      return new Uri(modifiedUri);
+        public UriService(string baseUri)
+        {
+            _baseUri = baseUri;
+        }
+
+        public Uri GetPageUri(PaginationFilter filter, string route)
+        {
+            var _enpointUri = new Uri(string.Concat(_baseUri, route));
+            var modifiedUri = QueryHelpers.AddQueryString(_enpointUri.ToString(), "pageNumber", filter.PageNumber.ToString());
+            modifiedUri = QueryHelpers.AddQueryString(modifiedUri, "pageSize", filter.PageSize.ToString());
+            return new Uri(modifiedUri);
+        }
     }
-  }
 }
