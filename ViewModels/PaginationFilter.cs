@@ -10,10 +10,11 @@
             PageNumber = 1;
             PageSize = 5;
         }
+
         public PaginationFilter(int pageNumber, int pageSize)
         {
             PageNumber = pageNumber < 1 ? 1 : pageNumber;
-            PageSize = pageSize < PageSize ? PageSize : pageSize > 50 ? 50 : pageSize;
+            PageSize = pageSize < PageSize ? 5 : pageSize > 50 ? 50 : pageSize;
         }
     }
 }
