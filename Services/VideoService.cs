@@ -29,13 +29,13 @@ namespace VideoRental.Services
 
             try
             {
-                //count = await _dbContext.Videos.CountAsync();
-                //videos = await _dbContext.Videos
-                //    .Include(x => x.Type)
-                //    .Select(x => new Video { Genre = x.Genre, Title = x.Title, Type = x.Type.Type })
-                //    .Skip((validFilter.PageNumber - 1) * validFilter.PageSize)
-                //    .Take(validFilter.PageSize)
-                //    .ToListAsync();
+                count = await _dbContext.Videos.CountAsync();
+                videos = await _dbContext.Videos
+                    .Include(x => x.Type)
+                    .Select(x => new Video { Genre = x.Genre, Title = x.Title, Type = x.Type.Type })
+                    .Skip((validFilter.PageNumber - 1) * validFilter.PageSize)
+                    .Take(validFilter.PageSize)
+                    .ToListAsync();
             }
             catch (Exception ex)
             {
@@ -51,18 +51,18 @@ namespace VideoRental.Services
 
             try
             {
-                //var video = await _dbContext.Videos
-                //    .Include(x => x.Type)
-                //    .Where(x => x.Title.ToLower().Equals(detail.Title.ToLower()))
-                //    .SingleOrDefaultAsync();
+                var video = await _dbContext.Videos
+                    .Include(x => x.Type)
+                    .Where(x => x.Title.ToLower().Equals(detail.Title.ToLower()))
+                    .SingleOrDefaultAsync();
 
-                //if (video != null)
-                //{
-                //    videoPrice.Days = detail.Days;
-                //    videoPrice.Name = detail.Name;
-                //    videoPrice.Title = detail.Title;
-                //    videoPrice.Price = CalculatePrice(video, detail.Days);
-                //}
+                if (video != null)
+                {
+                    videoPrice.Days = detail.Days;
+                    videoPrice.Name = detail.Name;
+                    videoPrice.Title = detail.Title;
+                    videoPrice.Price = CalculatePrice(video, detail.Days);
+                }
 
             }
             catch (Exception ex)
