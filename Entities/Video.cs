@@ -14,6 +14,6 @@ namespace VideoRental.Entities
         public virtual VideoType Type { get; set; }
         public string Genre { get; set; }
         public int MaximumAge { get; set; }
-        public int Year { get; set; }
+        public int Years { get; set; }
     }
 }
