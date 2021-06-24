@@ -33,16 +33,16 @@ namespace VideoRental.Data
                 new Video { Id = 18, Title = "Few Good Men, A", Genre = "Action", VideoTypeId = 2, MaximumAge = 12 },
                 new Video { Id = 19, Title = "Misérables, Les", Genre = "Drama", VideoTypeId = 2, MaximumAge = 13 },
                 new Video { Id = 20, Title = "Officer and a Gentleman, An", Genre = "Comedy", VideoTypeId = 2, MaximumAge = 14 },
-                new Video { Id = 21, Title = "YellowBrickRoad", Genre = "Horror", VideoTypeId = 3, Year = 2020 },
-                new Video { Id = 22, Title = "Singing Detective, The", Genre = "Comedy", VideoTypeId = 3, Year = 2021 },
-                new Video { Id = 23, Title = "Sorority Babes in the Slimeball Bowl-O-Rama", Genre = "Comedy", VideoTypeId = 3, Year = 2019 },
-                new Video { Id = 24, Title = "Big Tease, The", Genre = "Comedy", VideoTypeId = 3, Year = 2019 },
-                new Video { Id = 25, Title = "Time of Eve (Eve no jikan)", Genre = "Romance", VideoTypeId = 3, Year = 2020 },
-                new Video { Id = 26, Title = "As Long as You've Got Your Health (Tant qu'on a la santé)", Genre = "Drama", VideoTypeId = 3, Year = 2020 },
-                new Video { Id = 27, Title = "Red Hook Summer", Genre = "Action", VideoTypeId = 3, Year = 2021 },
-                new Video { Id = 28, Title = "The Feathered Serpent", Genre = "Horror", VideoTypeId = 3, Year = 2021 },
-                new Video { Id = 29, Title = "Little Lili (La petite Lili)", Genre = "Comedy", VideoTypeId = 3, Year = 2021 },
-                new Video { Id = 30, Title = "Falling in Love", Genre = "Romance", VideoTypeId = 3, Year = 2021 }
+                new Video { Id = 21, Title = "YellowBrickRoad", Genre = "Horror", VideoTypeId = 3, Years = 2 },
+                new Video { Id = 22, Title = "Singing Detective, The", Genre = "Comedy", VideoTypeId = 3, Years = 2 },
+                new Video { Id = 23, Title = "Sorority Babes in the Slimeball Bowl-O-Rama", Genre = "Comedy", VideoTypeId = 3, Years = 1 },
+                new Video { Id = 24, Title = "Big Tease, The", Genre = "Comedy", VideoTypeId = 3, Years = 1 },
+                new Video { Id = 25, Title = "Time of Eve (Eve no jikan)", Genre = "Romance", VideoTypeId = 3, Years = 2020 },
+                new Video { Id = 26, Title = "As Long as You've Got Your Health (Tant qu'on a la santé)", Genre = "Drama", VideoTypeId = 3, Years = 2 },
+                new Video { Id = 27, Title = "Red Hook Summer", Genre = "Action", VideoTypeId = 3, Years = 1 },
+                new Video { Id = 28, Title = "The Feathered Serpent", Genre = "Horror", VideoTypeId = 3, Years = 1 },
+                new Video { Id = 29, Title = "Little Lili (La petite Lili)", Genre = "Comedy", VideoTypeId = 3, Years = 2 },
+                new Video { Id = 30, Title = "Falling in Love", Genre = "Romance", VideoTypeId = 3, Years = 1 }
                 );
 
         }

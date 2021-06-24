@@ -36,9 +36,9 @@ namespace VideoRental.Controllers
             return Ok(pagedResponse);
         }
 
-        [HttpPost]
-        [SwaggerResponse(200, "A video price", typeof(Response<VideoPrice>))]
-        public async Task<IActionResult> GetPrice(Detail detail)
+        [HttpGet("price")]
+        [SwaggerResponse(200, "Get video price", typeof(Response<VideoPrice>))]
+        public async Task<IActionResult> GetPrice([FromQuery]Detail detail)
         {
             VideoPrice price = await _videoService.GetPrice(detail);
             Response<VideoPrice> response = new(price);

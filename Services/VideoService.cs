@@ -81,7 +81,7 @@ namespace VideoRental.Services
                 price += (video.MaximumAge / 2);
 
             if (video.Type.Type.Equals("New Release"))
-                price -= video.Year;
+                price -= video.Years;
 
             return price;
         }
