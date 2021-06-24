@@ -14,7 +14,7 @@
         public PaginationFilter(int pageNumber, int pageSize)
         {
             PageNumber = pageNumber < 1 ? 1 : pageNumber;
-            PageSize = pageSize < PageSize ? 5 : pageSize > 50 ? 50 : pageSize;
+            PageSize = pageSize < 5 ? 5 : pageSize > 50 ? 50 : pageSize;
         }
     }
 }
