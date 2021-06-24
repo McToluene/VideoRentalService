@@ -6,9 +6,9 @@ using VideoRental.API.ViewModels.Video;
 
 namespace VideoRental.Interfaces
 {
-  public interface IVideoService
-  {
-    Task<Tuple<List<Video>, int>> GetList(PaginationFilter validFilter);
-    Task<VideoPrice> GetPrice(Detail price);
-  }
+    public interface IVideoService
+    {
+        Task<Tuple<List<Video>, int>> GetList(PaginationFilter validFilter);
+        Task<VideoPrice> GetPrice(Detail price);
+    }
 }
